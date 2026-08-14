@@ -13,10 +13,10 @@
   --muted:         #6e6e73;
   --line:          rgba(0,0,0,.08);
 
-  --brand:         #0071e3;   /* accent blue  */
-  --brand-strong:  #0a5fc2;
-  --navy:          #071b34;   /* deep sections */
-  --navy-2:        #0d2c52;
+  --brand:         #2f9e14;   /* brand green */
+  --brand-strong:  #247a0f;
+  --navy:          #0a2e12;   /* deep green */
+  --navy-2:        #10441c;
 
   /* Effects */
   --radius:        22px;
@@ -25,7 +25,7 @@
   --shadow-sm:     0 2px 10px rgba(0,0,0,.05);
   --shadow:        0 12px 40px rgba(9,30,66,.10);
   --shadow-lg:     0 30px 70px rgba(9,30,66,.16);
-  --shadow-brand:  0 18px 40px rgba(0,113,227,.28);
+  --shadow-brand:  0 18px 40px rgba(47,158,20,.30);
 
   /* Type */
   --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI",
@@ -139,7 +139,7 @@ p { color: var(--ink-2); }
 .card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
 .card .icon {
   width: 52px; height: 52px; border-radius: 15px; display: grid; place-items: center;
-  background: linear-gradient(135deg, var(--brand), #34aadc); color: #fff; margin-bottom: 20px;
+  background: linear-gradient(135deg, var(--brand), #63cf34); color: #fff; margin-bottom: 20px;
   box-shadow: var(--shadow-brand);
 }
 .card .icon svg { width: 26px; height: 26px; }
@@ -223,7 +223,7 @@ p { color: var(--ink-2); }
 }
 .floaty .fi {
   width: 38px; height: 38px; border-radius: 11px; display: grid; place-items: center;
-  background: linear-gradient(135deg, var(--brand), #34aadc); color: #fff; flex: 0 0 auto;
+  background: linear-gradient(135deg, var(--brand), #63cf34); color: #fff; flex: 0 0 auto;
 }
 .floaty .fi svg { width: 20px; height: 20px; }
 .floaty small { display: block; font-weight: 500; color: var(--muted); font-size: .78rem; }
@@ -236,7 +236,7 @@ p { color: var(--ink-2); }
 .dark { background: linear-gradient(160deg, var(--navy) 0%, var(--navy-2) 100%); color: #fff; }
 .dark h1, .dark h2, .dark h3 { color: #fff; }
 .dark p { color: rgba(255,255,255,.72); }
-.dark .eyebrow { color: #6cb6ff; }
+.dark .eyebrow { color: #7fd94f; }
 .dark .card { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.12); }
 .dark .card h3 { color: #fff; }
 .dark .card p { color: rgba(255,255,255,.7); }
@@ -246,7 +246,7 @@ p { color: var(--ink-2); }
 /* Stats --------------------------------------------------------------- */
 .stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; text-align: center; }
 .stat .num { font-size: clamp(2rem,4vw,3rem); font-weight: 700; letter-spacing: -0.03em;
-  background: linear-gradient(135deg,#6cb6ff,#fff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  background: linear-gradient(135deg,#7fd94f,#fff); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .stat .label { color: rgba(255,255,255,.7); font-size: .95rem; margin-top: 4px; }
 
 /* Partner band -------------------------------------------------------- */
@@ -260,7 +260,7 @@ p { color: var(--ink-2); }
 /* CTA band ------------------------------------------------------------ */
 .cta-band {
   border-radius: var(--radius-lg); padding: clamp(44px, 6vw, 76px);
-  background: linear-gradient(135deg, var(--brand) 0%, #005bbb 100%); color: #fff;
+  background: linear-gradient(135deg, var(--brand) 0%, #1f6e0d 100%); color: #fff;
   text-align: center; box-shadow: var(--shadow-lg); position: relative; overflow: hidden;
 }
 .cta-band::before {
@@ -287,7 +287,7 @@ p { color: var(--ink-2); }
 }
 .field input:focus, .field select:focus, .field textarea:focus {
   outline: none; border-color: var(--brand); background: #fff;
-  box-shadow: 0 0 0 4px rgba(0,113,227,.14);
+  box-shadow: 0 0 0 4px rgba(47,158,20,.16);
 }
 .field textarea { resize: vertical; min-height: 120px; }
 .form-consent { font-size: .82rem; color: var(--muted); margin-top: 4px; }
@@ -304,7 +304,7 @@ p { color: var(--ink-2); }
 .contact-item { display: flex; gap: 16px; align-items: flex-start; }
 .contact-item .ci {
   width: 46px; height: 46px; border-radius: 13px; display: grid; place-items: center; flex: 0 0 auto;
-  background: rgba(0,113,227,.1); color: var(--brand);
+  background: rgba(47,158,20,.12); color: var(--brand);
 }
 .contact-item .ci svg { width: 22px; height: 22px; }
 .contact-item h4 { font-size: .82rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 3px; font-weight: 600; }
