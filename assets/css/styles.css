@@ -137,12 +137,13 @@ p { color: var(--ink-2); }
   will-change: transform;
 }
 .card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
-.card .icon {
+.icon {
   width: 52px; height: 52px; border-radius: 15px; display: grid; place-items: center;
-  background: linear-gradient(135deg, var(--brand), #63cf34); color: #fff; margin-bottom: 20px;
-  box-shadow: var(--shadow-brand);
+  background: linear-gradient(135deg, var(--brand), #63cf34); color: #fff;
+  box-shadow: var(--shadow-brand); flex: 0 0 auto;
 }
-.card .icon svg { width: 26px; height: 26px; }
+.card .icon { margin-bottom: 20px; }
+.icon svg { width: 26px; height: 26px; }
 .card h3 { font-size: 1.25rem; margin-bottom: 10px; }
 .card p { font-size: .98rem; }
 
