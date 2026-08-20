@@ -215,7 +215,11 @@ p { color: var(--ink-2); }
 .hero-badge .dot { width: 8px; height: 8px; border-radius: 50%; background: #34c759; box-shadow: 0 0 0 4px rgba(52,199,89,.18); }
 
 /* floating decorative cards in hero */
-.floaties { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.floaties {
+  position: absolute; top: 0; bottom: 0; left: 50%; transform: translateX(-50%);
+  width: 100%; max-width: var(--maxw); padding: 0 24px;
+  z-index: -1; pointer-events: none;
+}
 .floaty {
   position: absolute; border-radius: 20px; background: rgba(255,255,255,.7);
   backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,.7);
