@@ -32,7 +32,7 @@
           Roboto, Helvetica, Arial, sans-serif;
 
   --maxw: 1200px;
-  --nav-h: 66px;
+  --nav-h: 78px;
 }
 
 /* Reset --------------------------------------------------------------- */
@@ -93,7 +93,7 @@ p { color: var(--ink-2); }
 .nav.scrolled { border-bottom-color: var(--line); }
 .nav .container { display: flex; align-items: center; justify-content: space-between; }
 .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: -0.02em; font-size: 1.05rem; }
-.brand img { width: 34px; height: 34px; border-radius: 9px; }
+.brand img { width: 52px; height: 52px; border-radius: 12px; }
 .nav-links { display: flex; align-items: center; gap: 4px; }
 .nav-links a {
   padding: 8px 15px; border-radius: 999px; font-size: .92rem; font-weight: 500; color: var(--ink-2);
